@@ -1,0 +1,8 @@
+.classpath
+.project
+#這是註解	
+.settings/
+bin/
+#bin資列夾裡放的都是class檔，不需要版控
+DS_Store
+#macOS裡預設隱藏，但Windows會顯示出來但無用處
