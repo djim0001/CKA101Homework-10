@@ -7,10 +7,10 @@ public class Hw3Tool {
 	public int[] numbRandomPick1Start(int numbRange, int getCounts) {
 		int[] numb = new int[numbRange];
 		int[] numbPick = new int[getCounts];
+		
 		for(int i = 0; i < numbRange; i++) {
 			numb[i] = i + 1;
-		}	
-		
+		}		
 		for(int j = 0; j < getCounts; j++) {
 			int rd = (int)(Math.random() * numbRange);
 			if(numb[rd] == -1) {
@@ -39,14 +39,13 @@ public class Hw3Tool {
 					return i;
 				}else {
 					System.out.printf("錯誤，請輸入%d ~ %d的範圍%n", iMin, iMax);
-//					scr.nextLine();
 					continue;
 				}	
-			}else {	
+			}else{	
 				scr.nextLine();
 				System.out.println("錯誤，請輸入整數");
 				continue;
-				}
+			}
 		}
 	}
 	

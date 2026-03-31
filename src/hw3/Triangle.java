@@ -17,9 +17,9 @@ public class Triangle {
 				sidePow2 = (Math.pow(side[1], 2)),
 				sidePow3 = (Math.pow(side[2], 2));
 		if(side[0] > 0 && side[0] + side[1] > side[2] ) {	
-			if(side[0] == side[1]  && side[0] == side[2] ) {
+			if(side[0] == side[2] ) {
 				System.out.println("此三角形為正三角形。");
-			}else if(side[0] == side[1] || side[0] == side[2] || side[1] == side[2]) {
+			}else if(side[0] == side[1] || side[1] == side[2]) {
 					System.out.println("此三角形為等腰三角形。");
 			}else if(sidePow1 + sidePow2 == sidePow3){
 				System.out.println("此三角形為直角三角形。");
