@@ -48,11 +48,25 @@ public class Hw3Tool {
 			}
 		}
 	}
+	public int numbCheck(String prot) {
+		int i ;
+		Scanner scr = new Scanner(System.in);	
+		while(true) {
+			System.out.println(prot);
+			if(scr.hasNextInt()) {
+				i = scr.nextInt();
+				return i;
+			}else{	
+				scr.nextLine();
+				System.out.println("錯誤，請輸入整數");
+				continue;
+			}
+		}
+	}
 	
 //	public static void main(String[] args) {
 //		Hw3Tool htl = new Hw3Tool();
-//		int[] a = htl.numbRandomPick(20,4);
-//		htl.showRandomNumb(a);
+//		int a = htl.numbCheck("輸入:");
 //	}
 	
 }
