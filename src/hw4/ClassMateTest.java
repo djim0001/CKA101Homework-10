@@ -12,17 +12,13 @@ public class ClassMateTest {
 				{77, 95, 70, 89, 60, 75, 85, 89},
 				{98, 70, 89, 90, 75, 90, 89, 90},
 				{90, 80, 100, 75, 50, 20, 99, 75}
-		};	
-		cmt.topTimes(1, test);
-		cmt.topTimes(2, test);
-		cmt.topTimes(3, test);
-		cmt.topTimes(4, test);
-		cmt.topTimes(5, test);
-		cmt.topTimes(6, test);
-		cmt.topTimes(7, test);
-		cmt.topTimes(8, test);
+		};
+		for(int i = 1; i <= 8; i++) {
+			cmt.topTimes(i, test);
+		}
 		
 	}
+	
 	public int topCheck(int classNo, int[] t) {
 		int compare = 1;
 		for(int a = 0; a < t.length; a++) {
