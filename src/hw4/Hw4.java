@@ -50,6 +50,7 @@ public class Hw4 {
 		int vowelSum = 0;
 		for(int outI = 0; outI < c.length; outI++) {
 			for(int innerI = 0; innerI < c[outI].length; innerI++) {
+				c[outI][innerI] = Character.toLowerCase(c[outI][innerI]);
 				for(int vowelI = 0; vowelI < vowel.length; vowelI++) {
 					if(c[outI][innerI] == vowel[vowelI]) {
 						vowelSum += 1;
