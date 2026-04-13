@@ -1,7 +1,5 @@
 package hw4;
 
-import java.util.Scanner;
-
 import hw3.Hw3Tool;
 
 public class HowManyDate {
