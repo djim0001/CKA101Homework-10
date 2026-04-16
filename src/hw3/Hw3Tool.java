@@ -1,6 +1,8 @@
 package hw3;
 
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Hw3Tool {
 	
@@ -62,6 +64,14 @@ public class Hw3Tool {
 				continue;
 			}
 		}
+	}
+	public Set<Integer> setPickNumb(int range, int count) {
+		Set<Integer> set = new HashSet<Integer>();
+		while(set.size() < count) {
+			int n = (int) (Math.random() * range) + 1;
+			set.add(n);			
+		}
+		return set;
 	}
 	
 //	public static void main(String[] args) {
